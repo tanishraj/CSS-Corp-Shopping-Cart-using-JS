@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+    line-height: 1;
+}
+
+
+
+.clearfix :before {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*='container'] {
+    padding: 0 10px;
+}
+
+/*
+=================================================================
+Header STYLES STARTS HERE
+=================================================================
+*/
+.header-banner {
+    background: url(../assets/staticImages/bg-header.PNG) center no-repeat;
+    background-size: cover;
+    margin-bottom: 34px;
+}
+
+.header-container {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.logo {
+    float: left;
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+
+.logo span {
+    position: relative;
+}
+
+.logo span:before {
+    content: "";
+    position: absolute;
+    border: 0.035em solid #000;
+    top: 10px;
+    left: 3px;
+    width: 10.5px;
+}
+
+.login-box {
+    float: right;
+    font-family: 'Mukta', sans-serif;
+    padding: 10px 0;
+}
+
+.login-box ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.login-box ul li {
+    position: relative;
+    padding: 10px;
+}
+
+.login-box ul li:before {
+    content: '';
+    background: #ddd;
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.signin-label {
+    text-align: right;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.signin-label span {
+    display: block;
+    text-transform: capitalize;
+}
+
+.signin-label:before {
+    display: none;
+}
+
+.cart {
+    position: relative;
+}
+
+.main-menu {
+    clear: both;
+}
+
+.main-menu ul {
+    list-style: none;
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+.main-menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.main-menu ul li:last-child {
+    margin-right: 0;
+}
+
+.main-menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Mukta', sans-serif;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+}
+
+.main-menu ul li a:hover,
+.main-menu ul li a:active,
+.main-menu ul li a:focus {
+    text-decoration: underline;
+}
+
+.banner-container .banner {
+    float: right;
+    width: 40%;
+    padding: 8% 0 8% 30px;
+}
+
+.banner-container h1 {
+    font-size: 60px;
+    font-family: 'Mukta', sans-serif;
+    margin: 0;
+    line-height: 1;
+    font-weight: 300;
+}
+
+.banner-container .banner p {
+    margin: 0;
+    line-height: 1.3;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Mukta', sans-serif;
+}
+
+/*
+=================================================================
+Header STYLES End
+=================================================================
+*/
+
+/*
+=================================================================
+Footer STYLES start
+=================================================================
+*/
+
+.footer-wrap {
+    margin-top: 31px;
+    background: #040a2b;
+    color: #fff;
+    padding-top: 10px;
+}
+
+.other-benefits {
+    color: #9eafff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.other-benefits>div>ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.other-benefits>div>ul>li {
+    display: inline-block;
+    margin-right: 15px;
+    border-right: 1px solid;
+    padding-right: 15px;
+}
+
+.other-benefits>div>ul>li>span.fa {
+    padding-right: 3px;
+}
+
+.other-benefits>div>ul>li:last-child {
+    border: none;
+    padding-right: 0;
+}
+
+.additonal-links {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+
+.additonal-links>div {
+    width: 25%;
+    margin: 0 31px;
+}
+
+.additonal-links>div>h2 {
+    font-size: 22px;
+    letter-spacing: 0;
+    color: #fff;
+    height: auto;
+    line-height: normal;
+    padding: 0 0 5px 0;
+    border-bottom: 1px solid #9eafff;
+}
+
+.additonal-links ul {
+    list-style: none;
+    margin: 26px 0 0 0;
+    padding: 0;
+}
+
+.additonal-links ul li {
+    margin-bottom: 15px;
+}
+
+.additonal-links ul li a {
+    color: #9eafff;
+    text-decoration: none;
+}
+
+.additonal-links ul li a:hover,
+.additonal-links ul li a:focus,
+.additonal-links ul li a:active {
+    color: #fff;
+}
+
+ul.social-icons {
+    display: flex;
+}
+
+ul.social-icons li {
+    margin-right: 15px;
+    margin-bottom: 0;
+}
+
+ul.social-icons li a {
+    font-size: 22px;
+}
+
+.contact-us {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-half {
+    width: 50%;
+    margin: 0 0 0 31px;
+    padding-right: 39%;
+}
+
+.first-half h3 {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #9eafff;
+    display: inline-block;
+}
+
+.first-half div select {
+    width: 200px;
+    background-color: #040a2b;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 1px 8px
+}
+
+.second-half {
+    width: 50%;
+    display: flex;
+}
+
+.second-half>div {
+    width: 50%;
+}
+
+.second-half h3 {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #9eafff;
+    display: inline-block
+}
+
+.second-half button {
+    padding: 6px 22px;
+    background: #040a2b;
+    border: 1px solid #9eafff;
+    color: #9eafff;
+    outline: none;
+    width: 62px;
+}
+
+.second-half .controls-section input {
+    background-color: #040a2b;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 1px 8px
+}
+
+::placeholder {
+    color: #9eafff;
+    opacity: 1;
+    /* Firefox */
+}
+
+.terms-and-conditions {
+    margin-top: 15px;
+}
+
+.terms-and-conditions a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+/*
+=================================================================
+Footer STYLES End
+=================================================================
+*/

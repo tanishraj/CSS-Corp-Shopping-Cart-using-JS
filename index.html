@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Estée</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css" />
+    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+    <script src="assets/data/dataApi.js"></script>
+    <!-- <script src="js/index.js"></script> -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/accordion.css" />
+</head>
+
+<body>
+    <!-- Header start -->
+    <header class="header-wrap">
+        <div class="header-banner">
+
+            <div class="header-container clearfix">
+
+                <div class="logo">
+                    <h1>Est<span>e</span>e Lauder</h1>
+                </div>
+
+                <div class="login-box">
+                    <ul>
+                        <li class="signin-label">Sign In <span>Join Estée E-List Loyalty</span></li>
+                        <li class="search"><span class="fa fa-cart-arrow-down"></span></li>
+                        <li class="cart"><span class="fa fa-search"></span></li>
+                    </ul>
+                </div>
+
+                <div class="main-menu">
+                    <ul>
+                        <li><a href="#">SkinCare</a></li>
+                        <li><a href="#">Makeup</a></li>
+                        <li><a href="#">Fragrance</a></li>
+                        <li><a href="#">RE-NUTRIV</a></li>
+                        <li><a href="#">AERIN</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">New</a></li>
+                        <li><a href="#">Gifts</a></li>
+                        <li><a href="#">Estee Stories</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="banner-container clearfix">
+                <div class="banner">
+                    <h1>Here is a <br />Headline</h1>
+                    <p>Description goes here and help me <br />undersatnd how this four step <br />process works.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <div class="my-container">
+        <button class="accordion">
+            <div class="label">
+                <div class="product-image">1</div>
+                <div class="product-description"></div>
+                <div class="panel-name">Pick a cleanser</div>
+            </div>
+            <div class="access-button">Select +</div>
+        </button>
+        <div class="panel" id="cleanser">
+        </div>
+
+        <button class="accordion">
+            <div class="label">
+                <div class="product-image">2</div>
+                <div class="product-description"></div>
+                <div class="panel-name">Pick a serum</div>
+            </div>
+            <div class="access-button">Select +</div>
+        </button>
+        <div class="panel" id="serum">
+        </div>
+
+        <button class="accordion">
+            <div class="label">
+                <div class="product-image">3</div>
+                <div class="product-description"></div>
+                <div class="panel-name">Pick an eye cream </div>
+            </div>
+            <div class="access-button">Select +</div>
+        </button>
+        </button>
+        <div class="panel" id="eyeCream">
+        </div>
+
+        <div class="cart-details">
+            <div class="selected-products"><span class="noOfSelectedProducts">0</span> of <span class="total-section">3
+            </div>
+            <div class="product-price">$<span class="total-price">0.00</span></div>
+        </div>
+        <div class="cart-message">
+            <p> Your costume mini kit comes in our limited edition summer solocies make bad gree with your purchase.</p>
+            <button class="cart-button">Add To Bag</button>
+        </div>
+
+    </div>
+
+    <!-- Footer start -->
+    <footer class="footer-wrap">
+        <div class="footer-container">
+            <div class="other-benefits">
+                <div class="chat-box">
+                    <ul>
+                        <li>
+                            <span class="fa fa-comments"></span> Live Chat
+                        </li>
+                        <li>
+                            Join Estee E-List Loyality
+                        </li>
+                    </ul>
+                </div>
+                <div class="special-offer-box">
+                    <ul>
+                        <li>
+                            Special offers
+                        </li>
+                        <li>
+                            Free Shipping and Returns
+                        </li>
+                        <li>
+                            <span class="fa fa-map-marker"></span> Stores
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="additonal-links">
+                <div>
+                    <h2>About Estee Lauder</h2>
+                    <ul>
+                        <li><a href="#">Estee Lauder, Our Founder</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Corporate Info</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Need help?</h2>
+                    <ul>
+                        <li><a href="#">Beauty Chat</a></li>
+                        <li><a href="#">Order/Techincal Enquiry Chat</a></li>
+                        <li><a href="#">Email Us</a></li>
+                        <li><a href="#">Text a Beauty Advisor <span>1.646.846.1266</span></a></li>
+                        <li><a href="#">1.646.846.1266</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Customer Care</h2>
+                    <ul>
+                        <li><a href="#">Return &amp; Exchange</a></li>
+                        <li><a href="#">Where is my order?</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Information</a></li>
+                        <li><a href="#">More</a></li>
+                        <li><a href="#">eGift Cards</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Find Us</h2>
+                    <ul>
+                        <li><a href="#">Store Locator</a></li>
+                        <li>
+                            <ul class="social-icons">
+                                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                <li><a href="#"><span class="fa fa-pinterest"></span></a></li>
+                                <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+                                <li><a href="#"><span class="fa fa-youtube"></span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="contact-us">
+                <div class="first-half">
+                    <div>
+                        <h3>Change Location</h3>
+                        <select>
+                            <option value="United States">United States</option>
+                            <option value="India">India</option>
+                            <option value="Sri Lanka">Sri Lanka</option>
+                            <option value="England">England</option>
+                            <option value="Dubai">Dubai</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="second-half">
+                    <div>
+                        <h3>Sign up for Email</h3>
+                        <div class="controls-section">
+                            <input type="text" placeholder="sample@email.com" />
+                            <button>Go</button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Sign up for SMS</h3>
+                        <div class="controls-section">
+                            <input type="text" placeholder="(123)122-2234" />
+                            <button>Go</button>
+                        </div>
+                        <div class="terms-and-conditions">
+                            <label for="check">
+                                <input type="checkbox" id="check" />
+                                I'd like to recieve recurring advertising text message (SMS &amp; MMS) from
+                                Estee
+                                Lauder. I understand this text message may be sent via an authorizer and I font
+                                not
+                                need
+                                to provide concent to text messaging to purchase from Estee Lauder. I agree with
+                                the
+                                <a href="#">Mobile Terms and Conditions</a>. Msg&data rates may apply
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <script src="js/accordion.js"></script>
+</body>
+
+</html>
