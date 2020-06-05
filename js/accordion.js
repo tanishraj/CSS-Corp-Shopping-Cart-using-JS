@@ -91,6 +91,8 @@ function fetchSelectedProductData(selectedProductId, categoryType) {
 }
 
 $(document).ready(() => {
+    $('.cart-button').attr('disabled', 'true');
+
     $('.item-description').click(function () {
         const panelId = $(this).closest('.panel').attr('id');
         const unselectedProduct = $(`#${panelId}`).find('.selected').removeClass('selected');
@@ -126,7 +128,16 @@ function recentUnselectedProdcut(unselectedProduct, panelId) {
 function totalSelectedProducts() {
     let totalSelectedProducts = $('.noOfSelectedProducts').text();
     totalSelectedProducts++;
-    $('.noOfSelectedProducts').text(totalSelectedProducts)
+    $('.noOfSelectedProducts').text(totalSelectedProducts);
+    enableAddToCartButton(totalSelectedProducts);
+}
+
+function enableAddToCartButton(totalSelectedProducts) {
+    if (totalSelectedProducts === 3) {
+        $('.cart-button').removeAttr('disabled');
+    } else {
+        $('.cart-button').attr('disabled', 'true');
+    }
 }
 
 function updateCartPrice(actionType, productPrice) {
